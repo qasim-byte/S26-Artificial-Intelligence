@@ -1,57 +1,52 @@
-#### Student Data Set was taken from Kaggle : https://www.kaggle.com/datasets/rabieelkharoua/students-performance-dataset
+Student Data Set was taken from Kaggle : https://www.kaggle.com/datasets/rabieelkharoua/students-performance-dataset
 
-#### About Dataset
-
-
-
-###### **This dataset contains comprehensive information on 2,392 high school students, detailing their demographics, study habits, parental involvement, extracurricular activities, and academic performance. The target variable, Grade Class, classifies students' grades into distinct categories, providing a robust dataset for educational research, predictive modeling, and statistical analysis.**
+About Dataset
 
 
 
-### Table of Contents
-
-* ###### Student Information
-* ###### Student ID
-* ###### Demographic Details
-* ###### Study Habits
-* ###### Parental Involvement
-* ###### Extracurricular Activities
-* ###### Academic Performance
-* ###### Target Variable: Grade Class
-* ###### Student Information
-* ###### Student ID
-
-### 
-
-### Student ID: A unique identifier assigned to each student (1001 to 3392)
+This dataset contains comprehensive information on 2,392 high school students, detailing their demographics, study habits, parental involvement, extracurricular activities, and academic performance. The target variable, Grade Class, classifies students' grades into distinct categories, providing a robust dataset for educational research, predictive modeling, and statistical analysis.
 
 
 
-* ###### Demographic Details
-* ###### Age: The age of the students ranges from 15 to 18 years.
-* ###### Gender: Gender of the students, where 0 represents Male and 1 represents Female.
-* ###### Ethnicity: The ethnicity of the students, coded as follows:
-* ###### 0: Caucasian
-* ###### 1: African American
-* ###### 2: Asian
-* ###### 3: Other
-* ###### Parental Education: The education level of the parents, coded as follows:
-* ###### 0: None
-* ###### 1: High School
-* ###### 2: Some College
-* ###### 3: Bachelor's
-* ###### 4: Higher
-* ###### Study Habits
+Table of Contents
 
-##### 
+1)Student Information
+2)Student ID
+3)Demographic Details
+4)Study Habits
+5)Parental Involvement
+6)Extracurricular Activities
+7)Academic Performance
+8)Target Variable: Grade Class
+9)Student Information
+10)Student ID
 
-##### "Study Time Weekly: Weekly study time in hours, ranging from 0 to 20.
 
-##### Absences: Number of absences during the school year, ranging from 0 to 30.
+Student ID: A unique identifier assigned to each student (1001 to 3392)
 
-##### Tutoring: Tutoring status, where 0 indicates No and 1 indicates Yes.
 
-##### Parental Involvement"
+
+"Demographic Details"
+Age: The age of the students ranges from 15 to 18 years.
+Gender: Gender of the students, where 0 represents Male and 1 represents Female.
+Ethnicity: The ethnicity of the students, coded as follows:
+0: Caucasian
+1: African American
+2: Asian
+3: Other
+ "Parental Education: The education level of the parents", coded as follows:
+0: None
+1: High School
+2: Some College
+3: Bachelor's
+4: Higher
+Study Habits
+
+
+ "Study Time Weekly: Weekly study time in hours, ranging from 0 to 20."
+
+Absences: Number of absences during the school year, ranging from 0 to 30.
+Tutoring: Tutoring status, where 0 indicates No and 1 indicates Yes.
 
 
 
