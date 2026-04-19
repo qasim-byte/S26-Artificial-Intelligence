@@ -114,25 +114,25 @@ pip install -r requirements.txt
 
 ### **Limitations**
 ---
--- Possible overfitting due to high accuracy
--- Depends on quality of input data
--- May not generalize well to real-world healthcare data
--- Not a substitute for professional medical or financial advice
+- Possible overfitting due to high accuracy
+- Depends on quality of input data
+- May not generalize well to real-world healthcare data
+- Not a substitute for professional medical or financial advice
 
 
 ###  **Future Improvements**
 ---
--- Use real-world healthcare datasets
--- Add more medical features (lab reports, lifestyle habits)
--- Apply advanced tuning and cross-validation
--- Improve handling of outliers (log transformation)
--- Deploy on cloud platforms (Render, AWS, etc.)
+- Use real-world healthcare datasets
+- Add more medical features (lab reports, lifestyle habits)
+- Apply advanced tuning and cross-validation
+- Improve handling of outliers (log transformation)
+- Deploy on cloud platforms (Render, AWS, etc.)
 
 
  **Author**
 ---
 ```Qasim Ashfaq```
----
+
 ### **Disclaimer**
 ---
 ```This project is for educational purposes only. Predictions are estimates and should not be used for real medical or financial decisions.```
