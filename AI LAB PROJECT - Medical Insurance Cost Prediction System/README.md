@@ -3,7 +3,11 @@
 A machine learning project that predicts **annual medical expenses** based on personal health, lifestyle, and healthcare usage data. The system is deployed using a **Streamlit web application** for real-time interaction.
 
 ---
+##  Problem Statement
 
+Estimating future medical costs is difficult due to multiple interacting factors such as lifestyle, chronic conditions, and healthcare usage.
+
+Traditional estimation methods are often inaccurate or static. This project aims to develop a machine learning-based system that provides dynamic and personalized cost predictions.
 ##  Project Overview
 
 This project builds a regression model to estimate medical costs using features such as age, BMI, medical conditions, insurance details, and past healthcare expenses.
@@ -13,6 +17,26 @@ This project builds a regression model to estimate medical costs using features 
 - Goal: Provide a simple, data-driven way to estimate healthcare costs and identify risk factors  
 
 ---
+##  Methodology
+
+1. Data Collection  
+   - Dataset containing health, demographic, and cost-related features  
+
+2. Data Preprocessing  
+   - Encoding categorical variables (smoker, insurance type)  
+   - Handling missing values (if any)  
+   - Feature selection based on importance  
+
+3. Model Training  
+   - Used Gradient Boosting Regressor  
+   - Trained on structured tabular data  
+
+4. Model Evaluation  
+   - Evaluated using R², MAE, and RMSE  
+
+5. Deployment  
+   - Model saved using pickle  
+   - Integrated into Streamlit web app
 
 ##  Features
 
@@ -59,15 +83,19 @@ This project builds a regression model to estimate medical costs using features 
 
 ---
 
-##  Model Performance
+##  Evaluation Metrics Explained
 
-- **R² Score:** 99.25%  
-- **MAE:** ~$373  
-- **RMSE:** ~$620  
+- MAE (~$373): Average prediction error  
+- RMSE (~$620): Indicates presence of larger errors (outliers)  
+- R² (99.25%): High accuracy on dataset  
 
-###  Interpretation:
-- Average prediction error ≈ $373  
-- Higher RMSE indicates presence of some high-cost outliers  
+ Note: High R² may be influenced by strong correlation of previous year cost with target.
+
+##  Important Observation
+
+The feature "previous_year_cost" is highly correlated with the target variable.
+
+This may increase model performance artificially and should be carefully validated on unseen data. 
 
 ---
 
@@ -112,12 +140,12 @@ pip install -r requirements.txt
 ```User Input → Data Preprocessing → Model Prediction → Cost Output → Risk Analysis```
 
 
-### **Limitations**
----
-- Possible overfitting due to high accuracy
-- Depends on quality of input data
-- May not generalize well to real-world healthcare data
-- Not a substitute for professional medical or financial advice
+### Limitations
+
+- Possible overfitting due to very high R² score  
+- Model depends heavily on input features like previous cost  
+- Dataset may not represent real-world healthcare diversity  
+- Predictions may be less accurate for extreme cases (very high costs)
 
 
 ###  **Future Improvements**
@@ -128,6 +156,24 @@ pip install -r requirements.txt
 - Improve handling of outliers (log transformation)
 - Deploy on cloud platforms (Render, AWS, etc.)
 
+##  Project Structure
+
+├── medical_cost_app.py  
+├── medical_cost_notebook.ipynb  
+├── model_medical_cost.pkl  
+├── README.md  
+
+##  Example Prediction
+
+Input:
+- Age: 45  
+- BMI: 30  
+- Smoker: Yes  
+- Previous Cost: $5000  
+
+Output:
+- Annual Cost: ~$7200  
+- Monthly Cost: ~$600  
 
  **Author**
 ---
