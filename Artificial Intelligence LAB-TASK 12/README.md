@@ -1,6 +1,6 @@
-# 🎓 GPA Prediction System (Flask-Based Web App)
+#  GPA Prediction System (Flask-Based Web App)
 
-## 📌 Overview
+##  Overview
 
 This project is a **machine learning-based GPA prediction system** that estimates a student's GPA based on academic, behavioral, and demographic features.
 
@@ -8,7 +8,7 @@ The model is integrated into a **Flask web application**, allowing users to inpu
 
 ---
 
-## ⚙️ How the Model Works
+##  Working of The Model
 
 ### 1. Data Representation
 
@@ -56,9 +56,9 @@ The model uses **numerical features only**. All categorical variables are pre-en
 
 ---
 
-## 🌐 Flask Integration
+##  Flask Integration
 
-### Why Flask?
+### The Main Reason :
 
 Flask is used to convert the ML model into a **web-accessible application**, enabling interaction without running Python scripts manually.
 
@@ -129,7 +129,7 @@ project/
 
 ---
 
-## 🎯 Input Validation
+##  Input Validation
 
 Validation is handled at two levels:
 
@@ -146,9 +146,9 @@ Validation is handled at two levels:
 
 ---
 
-## 🚀 Running the Project
+##  Running the Project
 
-### 1. Install Dependencies
+### 1. Install Required Modules
 
 ```bash
 pip install flask pandas scikit-learn joblib
@@ -168,7 +168,7 @@ http://127.0.0.1:5000
 
 ---
 
-## ⚠️ Important Notes
+##  Important Notes
 
 * The model expects **exact numeric encoding**
   → Any mismatch will produce incorrect predictions
@@ -180,7 +180,7 @@ http://127.0.0.1:5000
 
 ---
 
-## 📈 Possible Improvements
+##  Possible Improvements
 
 * Replace numeric inputs with dropdowns/sliders
 * Add model explainability (e.g., feature importance)
@@ -189,7 +189,7 @@ http://127.0.0.1:5000
 
 ---
 
-## 📊 Summary
+##  Summary
 
 This project demonstrates:
 
@@ -200,7 +200,7 @@ This project demonstrates:
 
 ---
 
-## 📎 Conclusion
+##  Conclusion
 
 The system successfully bridges the gap between a trained machine learning model and a usable web application, making predictions accessible through a simple and structured interface.
 
